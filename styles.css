@@ -1,18 +1,32 @@
-body {
-  display: flex;
-  margin: 0;
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("Norse-Bold.otf");
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+}
+
+#wrapper {
+  display: flex;
+  max-width: 1300px;
+}
 #stone {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   object-position: 70%;
 }
 
 #left {
-  max-width: calc(35vw);
+  width: min(40vw, 0.4 * 980px);
+  height: 100vh;
   position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 #banner {
@@ -22,10 +36,50 @@ body {
   right: 0;
   display: flex;
   justify-content: center;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-family: Norse-Bold;
 }
 
 #logo > img {
-  height: 150px;
+  height: min(100px, 10vmin);
+  padding: 10px;
+}
+
+#logo > p {
+  color: white;
+  font-size: min(100px, 10vmin);
+  margin: 0;
+  margin-left: 10px;
+}
+
+#pictureCredit {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  color: white;
+  text-align: center;
+}
+
+#right {
+  font-family: Athletics, Circular, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 50px;
+}
+
+#right > form > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: block;
+  width: 120px;
 }

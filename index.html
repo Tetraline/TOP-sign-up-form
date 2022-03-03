@@ -8,28 +8,61 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="left">
-      <img id="stone" src="stone.jpg" alt="Picture of Stonehenge" />
-      <div id="banner">
-        <div id="logo">
-          <img src="odin.png" alt="" />
-          RACK
+    <div id="wrapper">
+      <div id="left">
+        <img id="stone" src="stone.jpg" alt="Picture of Stonehenge" />
+        <div id="banner">
+          <div id="logo">
+            <img src="odin.png" alt="" />
+            <p>RACK</p>
+          </div>
         </div>
+        <p id="pictureCredit">Picture taken by David Slithers</p>
       </div>
-      <p>Picture taken by David Slithers</p>
-    </div>
 
-    <div id="right">
-      <h1>A product for the 21st Century</h1>
-      <p>
-        Can't center? Continuously tired? Feeling up and down? Our top-rated
-        equation of 20 key vitamins and minerals, counting vitamins D, C and
-        B12, and omega 3 targets everything from destitute rest to brain haze
-        and stretch. So you're feeling way better, each day.
-      </p>
-      <div id="form">This is the form</div>
-      <button>Create Account</button>
-      <p>Aleady have an acocunt? <a href="#">Login.</a></p>
+      <div id="right">
+        <h1>A product for the 21st Century</h1>
+        <p>
+          Can't center? Continuously tired? Feeling up and down? Our top-rated
+          equation of 20 key vitamins and minerals, counting vitamins D, C and
+          B12, and omega 3 targets everything from destitute rest to brain haze
+          and stretch. So you're feeling way better, each day.
+        </p>
+        <form action="#" method="post">
+          <ul>
+            <li>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" />
+            </li>
+            <li>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone" />
+            </li>
+            <li>
+              <label for="pass">Password:</label>
+              <input type="password" name="password" id="password" />
+            </li>
+            <li>
+              <label for="pass">Confirm Password:</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </li>
+          </ul>
+        </form>
+        <button>Create Account</button>
+        <p>Aleady have an acocunt? <a href="#">Login.</a></p>
+      </div>
     </div>
   </body>
 </html>
