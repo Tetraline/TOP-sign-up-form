@@ -116,6 +116,7 @@ label {
 }
 
 /* Selects any invalid <input> */
-input:invalid {
-  background-color: pink;
+input:valid {
+  background-color: lightgreen;
+  transition-duration: 10ms;
 }
