@@ -28,39 +28,50 @@
           B12, and omega 3 targets everything from destitute rest to brain haze
           and stretch. So you're feeling way better, each day.
         </p>
-        <form action="#" method="post">
+        <form action="" method="post">
           <div>
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" />
+            <input type="text" id="firstName" name="firstName" minlength="1" />
           </div>
           <div>
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" />
+            <input type="text" id="lastName" name="lastName" minlength="1" />
           </div>
           <div>
             <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_email" />
+            <input type="email" id="mail" name="user_email" minlength="4" />
           </div>
           <div>
             <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" />
+            <input type="tel" name="phone" id="phone" minlength="4" />
           </div>
           <div>
             <label for="pass">Password:</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="4"
+            />
           </div>
           <div>
             <label for="pass">Confirm Password:</label>
             <input
+              minlength="4"
               type="password"
               name="confirmPassword"
               id="confirmPassword"
             />
+            <p id="errMsg" style="color: red; display: none">
+              Passwords must match!
+            </p>
           </div>
+
+          <button>Create Account</button>
         </form>
-        <button>Create Account</button>
         <p>Aleady have an acocunt? <a href="#">Login.</a></p>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

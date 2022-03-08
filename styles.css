@@ -81,7 +81,7 @@ body {
 
 input {
   display: block;
-  width: 120px;
+  width: 300px;
   margin: 5px;
   margin-right: 50px;
   padding: 12px 20px;
@@ -93,4 +93,29 @@ form {
   display: flex;
   flex-wrap: wrap;
   max-width: 400px;
+}
+
+#right > form > button {
+  width: 100px;
+  height: 40px;
+  flex-grow: 0;
+  color: #fff;
+  background-color: #596d48;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+}
+
+/* Selects any invalid <input> */
+input:invalid {
+  background-color: pink;
 }
